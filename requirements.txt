@@ -1,0 +1,6 @@
+numpy
+scipy
+pillow
+opencv-python-headless
+soundfile
+kokoro-onnx==0.6.1

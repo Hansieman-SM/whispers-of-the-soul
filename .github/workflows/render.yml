@@ -1,0 +1,54 @@
+name: Render Shorts
+on:
+  push:
+    branches: [main]
+    paths: ['content/scripts/*.json']
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: 'Script ids to (re)render, space separated'
+        required: true
+permissions:
+  contents: write
+concurrency: { group: render, cancel-in-progress: false }
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet -r requirements.txt
+      - name: Voice model (Kokoro-82M ONNX, Apache-2.0)
+        uses: actions/cache@v4
+        with: { path: models, key: kokoro-onnx-v1.0 }
+      - run: bash tools/get_models.sh
+      - name: Render, QC and release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "${{ github.event.inputs.ids }}" ]; then IDS="${{ github.event.inputs.ids }}";
+          else IDS=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/scripts/*.json' | xargs -r -n1 basename | sed 's/\.json$//'); fi
+          mkdir -p logs; FAILED=""
+          for id in $IDS; do
+            echo "== $id"
+            if python3 -m wots.textcheck content/scripts/$id.json > logs/$id.log 2>&1 \
+               && python3 -m wots.render content/scripts/$id.json out/$id >> logs/$id.log 2>&1 \
+               && python3 -m wots.qc out/$id/$id.mp4 >> logs/$id.log 2>&1 \
+               && bash tools/sheet.sh out/$id/$id.mp4 out/$id/${id}_sheet.jpg >> logs/$id.log 2>&1; then
+              gh release delete "$id" -y --cleanup-tag 2>/dev/null || true
+              gh release create "$id" out/$id/$id.mp4 out/$id/${id}_thumb.jpg out/$id/$id.meta.json out/$id/$id.qc.json out/$id/${id}_sheet.jpg --title "$id" --notes "Rendered by GitHub Actions"
+            else
+              echo "FAILED $id"; tail -40 logs/$id.log; FAILED="$FAILED $id"
+            fi
+          done
+          if [ -n "$FAILED" ]; then
+            gh release delete render-logs -y --cleanup-tag 2>/dev/null || true
+            gh release create render-logs logs/*.log --title render-logs --notes "Failed:$FAILED" --prerelease
+            exit 1
+          fi
