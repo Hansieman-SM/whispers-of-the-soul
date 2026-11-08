@@ -81,3 +81,4 @@ After it is scheduled, append one line with the same fields to `content/archive.
   C 30–60 min calm music video (Fri). Not built yet – until wots/long.py exists the daily run only makes Shorts.
 - 2026-11-08: launch set of 5 extra Shorts (Hans approved) 21:55–23:35 Amsterdam, slot 'S' ids 2026-11-08-S1..S5.
 - 2026-11-08 21:30: first Short live (https://www.youtube.com/shorts/L6XgrruqbJw). Metricool reported 'published with warnings: Could not upload video thumbnail' → channel needs phone verification for custom thumbnails (asked Hans). Hans verified the phone at 21:46 – custom thumbnails should work from then on.
+- 2026-11-08 21:55: first post after verification published cleanly with custom thumbnail (lLVeCUmRBGI).

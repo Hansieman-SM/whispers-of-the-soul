@@ -205,12 +205,14 @@
   "2026-11-08-S1-soul-purpose": {
    "date": "2026-11-08",
    "slot": "S",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-08-S1-soul-purpose",
    "metricoolId": 421050894,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6033706635320211557",
    "attempts": 1,
-   "note": "launch set, 21:55 Europe/Amsterdam"
+   "note": "launch set, 21:55 Europe/Amsterdam",
+   "youtubeId": "lLVeCUmRBGI",
+   "url": "https://www.youtube.com/shorts/lLVeCUmRBGI"
   },
   "2026-11-08-S2-letting-go": {
    "date": "2026-11-08",
