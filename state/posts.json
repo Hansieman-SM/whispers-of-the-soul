@@ -198,6 +198,56 @@
    "metricoolId": 421034560,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-938268477303403295",
    "attempts": 1
+  },
+  "2026-11-08-S1-soul-purpose": {
+   "date": "2026-11-08",
+   "slot": "S",
+   "status": "scheduled",
+   "release": "2026-11-08-S1-soul-purpose",
+   "metricoolId": 421050894,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6033706635320211557",
+   "attempts": 1,
+   "note": "launch set, 21:55 Europe/Amsterdam"
+  },
+  "2026-11-08-S2-letting-go": {
+   "date": "2026-11-08",
+   "slot": "S",
+   "status": "scheduled",
+   "release": "2026-11-08-S2-letting-go",
+   "metricoolId": 421050949,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7829984431721264058",
+   "attempts": 1,
+   "note": "launch set, 22:20 Europe/Amsterdam"
+  },
+  "2026-11-08-S3-life-after-death": {
+   "date": "2026-11-08",
+   "slot": "S",
+   "status": "scheduled",
+   "release": "2026-11-08-S3-life-after-death",
+   "metricoolId": 421050992,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=2326838183119769109",
+   "attempts": 1,
+   "note": "launch set, 22:45 Europe/Amsterdam"
+  },
+  "2026-11-08-S4-animals": {
+   "date": "2026-11-08",
+   "slot": "S",
+   "status": "scheduled",
+   "release": "2026-11-08-S4-animals",
+   "metricoolId": 421051058,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-54377462068719797",
+   "attempts": 1,
+   "note": "launch set, 23:10 Europe/Amsterdam"
+  },
+  "2026-11-08-S5-nature": {
+   "date": "2026-11-08",
+   "slot": "S",
+   "status": "scheduled",
+   "release": "2026-11-08-S5-nature",
+   "metricoolId": 421051126,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1850237940761315946",
+   "attempts": 1,
+   "note": "launch set, 23:35 Europe/Amsterdam"
   }
  }
 }

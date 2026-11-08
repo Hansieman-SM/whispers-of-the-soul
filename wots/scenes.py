@@ -477,7 +477,7 @@ class Whale:
         top = 0.19 * np.sin(np.pi * u ** 0.7) * (1 - 0.3 * u)
         bot = -0.15 * np.sin(np.pi * u ** 0.6) * (1 - 0.2 * u)
         self.body = (u, top, bot)
-        self.col = (14, 22, 46)
+        self.col = (46, 66, 104)   # lighter than the deep water so the whale reads clearly (fix 2026-11-08)
 
     def frame(self, t):
         lw = self.lw
@@ -505,7 +505,7 @@ class Whale:
         fx = x + self.dir * 0.12 * L; fy = self.y + 0.06 * L * 0.6
         fin = np.array([[fx, fy], [fx - self.dir * 0.16 * L, fy + 0.1 * L], [fx - self.dir * 0.05 * L, fy + 0.02 * L]], np.int32)
         cv2.fillPoly(ov, [fin], self.col, cv2.LINE_AA)
-        cv2.addWeighted(ov, 0.82, img, 0.18, 0, img)
+        cv2.addWeighted(ov, 0.9, img, 0.1, 0, img)
 
 
 SCENES = {c.name: c for c in [Nebula, MoonSea, Forest, Aurora, Feather, DawnClouds, Birds, Whale]}

@@ -76,3 +76,4 @@ After it is scheduled, append one line with the same fields to `content/archive.
   (ids in state/posts.json). Daily scheduled task "Whispers dagelijkse productie" keeps the 7-day buffer.
 - Planned next (approved by Hans 2026-11-08): weekly long videos, 1920x1080 – A weekly compilation (Sun), B new long reflection/meditation (Wed),
   C 30–60 min calm music video (Fri). Not built yet – until wots/long.py exists the daily run only makes Shorts.
+- 2026-11-08: launch set of 5 extra Shorts (Hans approved) 21:55–23:35 Amsterdam, slot 'S' ids 2026-11-08-S1..S5.
