@@ -12,8 +12,11 @@ def build(sid, tag, at=None):
     brand = CFG['metricool']['brandId']
     if not brand:
         raise SystemExit('REFUSED: config metricool.brandId is empty - the Whispers of the Soul brand is not linked yet')
-    slot = next(x for x in CFG['schedule']['slots'] if x['slot'] == s['slot'])
-    date, time = (at.split('T') if at else (s['date'], slot['time']))
+    if at:
+        date, time = at.split('T')
+    else:
+        slot = next(x for x in CFG['schedule']['slots'] if x['slot'] == s['slot'])
+        date, time = s['date'], slot['time']
     tags = CFG['hashtags']['base'] + CFG['hashtags'][s['topic']]
     url = lambda f: CFG['hosting']['releaseUrl'].format(tag=tag, file=f)
     text = (f"{s['description']}\n\n{CFG['slogan']}\n\n"
