@@ -15,9 +15,12 @@ jobs:
   render:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix: { shard: [0, 1, 2, 3] }
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 2 }
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - name: Install
@@ -28,12 +31,16 @@ jobs:
         uses: actions/cache@v4
         with: { path: models, key: kokoro-onnx-v1.0 }
       - run: bash tools/get_models.sh
-      - name: Render, QC and release
+      - name: Render, QC and release (shard ${{ matrix.shard }} of 4)
         env:
           GH_TOKEN: ${{ github.token }}
+          SHARD: ${{ matrix.shard }}
         run: |
-          if [ -n "${{ github.event.inputs.ids }}" ]; then IDS="${{ github.event.inputs.ids }}";
-          else IDS=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/scripts/*.json' | xargs -r -n1 basename | sed 's/\.json$//'); fi
+          if [ -n "${{ github.event.inputs.ids }}" ]; then ALL="${{ github.event.inputs.ids }}";
+          else ALL=$(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.sha }} -- 'content/scripts/*.json' 2>/dev/null || git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'content/scripts/*.json');
+               ALL=$(echo "$ALL" | xargs -r -n1 basename | sed 's/\.json$//' | sort); fi
+          IDS=$(echo $ALL | tr ' ' '\n' | awk -v s=$SHARD 'NF && (NR-1)%4==s')
+          echo "Shard $SHARD: $IDS"
           mkdir -p logs; FAILED=""
           for id in $IDS; do
             echo "== $id"
@@ -48,7 +55,7 @@ jobs:
             fi
           done
           if [ -n "$FAILED" ]; then
-            gh release delete render-logs -y --cleanup-tag 2>/dev/null || true
-            gh release create render-logs logs/*.log --title render-logs --notes "Failed:$FAILED" --prerelease
+            gh release delete render-logs-$SHARD -y --cleanup-tag 2>/dev/null || true
+            gh release create render-logs-$SHARD logs/*.log --title render-logs-$SHARD --notes "Failed:$FAILED" --prerelease
             exit 1
           fi

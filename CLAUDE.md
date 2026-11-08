@@ -43,7 +43,7 @@ After it is scheduled, append one line with the same fields to `content/archive.
 - Push to main → GitHub Actions `.github/workflows/render.yml` renders each new script (Kokoro voice af_heart, generative music,
   procedural visuals, captions, thumbnail), runs `wots.qc`, makes the contact sheet and publishes a release with tag = script id:
   `https://github.com/Hansieman-SM/whispers-of-the-soul/releases/download/<id>/<id>.mp4` (+ `_thumb.jpg`, `.meta.json`, `.qc.json`, `_sheet.jpg`).
-  Failed items go to the prerelease `render-logs`.
+  Rendering runs in 4 parallel shards; failed items go to the prereleases `render-logs-<shard>` (logs per id).
 - Local render is also possible (`bash tools/get_models.sh; python3 -m wots.render content/scripts/<id>.json out/<id>`).
 - Visual check: download `<id>_sheet.jpg` and LOOK at it: captions readable, inside the frame, nothing covering them, no artefacts,
   no black/empty frames. Reject and fix otherwise.
