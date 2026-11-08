@@ -56,7 +56,10 @@ After it is scheduled, append one line with the same fields to `content/archive.
 
 ## Daily run (scheduled task)
 1. `git pull`. Pause switch. getBrandSettings: brand + channel check.
-2. Failures: getScheduledPosts for the past 2 days and the next 8 (extendedRange). Any provider in ERROR, or PENDING > 30 min after its
+2. Failures: getScheduledPosts for the past 2 days and the next 8 (extendedRange). IMPORTANT: a provider with status ERROR but a
+   `publicUrl`/`id` and detailedStatus "published with some warnings: Could not upload video thumbnail" IS PUBLISHED – never retry or
+   re-create it (that would be a duplicate); just mark it published in state. Cause: custom thumbnails need a phone-verified channel.
+   Any other provider in ERROR (no publicUrl), or PENDING > 30 min after its
    time: fix if possible (updateScheduledPost to a time ≥ 15 min ahead, same content) – max 2 attempts per post, tracked in state.
    If it needs Hans (disconnected account, permissions, limits), tell him exactly what to do.
 3. Reconcile `state/posts.json` with Metricool (published / scheduled / failed).
@@ -77,3 +80,4 @@ After it is scheduled, append one line with the same fields to `content/archive.
 - Planned next (approved by Hans 2026-11-08): weekly long videos, 1920x1080 – A weekly compilation (Sun), B new long reflection/meditation (Wed),
   C 30–60 min calm music video (Fri). Not built yet – until wots/long.py exists the daily run only makes Shorts.
 - 2026-11-08: launch set of 5 extra Shorts (Hans approved) 21:55–23:35 Amsterdam, slot 'S' ids 2026-11-08-S1..S5.
+- 2026-11-08 21:30: first Short live (https://www.youtube.com/shorts/L6XgrruqbJw). Metricool reported 'published with warnings: Could not upload video thumbnail' → channel needs phone verification for custom thumbnails (asked Hans).

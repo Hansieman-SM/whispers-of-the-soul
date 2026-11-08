@@ -3,12 +3,15 @@
   "trial-03-spirit-guides": {
    "date": "2026-11-08",
    "slot": "test",
-   "status": "scheduled",
+   "status": "published",
    "release": "trial-03-spirit-guides",
    "metricoolId": 421032749,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4662187566225538048",
    "attempts": 1,
-   "note": "Test publication 2026-11-08 21:30 Europe/Amsterdam"
+   "note": "Test publication 2026-11-08 21:30 Europe/Amsterdam",
+   "youtubeId": "L6XgrruqbJw",
+   "url": "https://www.youtube.com/shorts/L6XgrruqbJw",
+   "warning": "thumbnail not uploaded"
   },
   "2026-11-09-A-inner-knowing": {
    "date": "2026-11-09",
