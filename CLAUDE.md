@@ -47,8 +47,9 @@ After it is scheduled, append one line with the same fields to `content/archive.
 - Local render is also possible (`bash tools/get_models.sh; python3 -m wots.render content/scripts/<id>.json out/<id>`).
 - Visual check: download `<id>_sheet.jpg` and LOOK at it: captions readable, inside the frame, nothing covering them, no artefacts,
   no black/empty frames. Reject and fix otherwise.
-- `python3 -m wots.postdata <id> <id>` → exact Metricool payload (blogId, date, info). Then call Metricool createScheduledPost with it.
-  Also try `videoThumbnailUrl` = the thumbnail URL; if Metricool rejects it (VIDEO_THUMBNAIL_NOT_APPLICABLE), schedule without it.
+- `python3 -m wots.postdata <id> <id>` → exact Metricool payload: blogId, date (with the correct UTC offset for that day), info, and
+  videoThumbnailUrl. Call Metricool createScheduledPost with blogId, date and info, after adding `"videoThumbnailUrl"` into the info object
+  (works on this channel, tested 2026-11-08). If Metricool rejects it (VIDEO_THUMBNAIL_NOT_APPLICABLE), schedule without it.
   YouTube: type "short", madeForKids false, isAiGeneratedContent true (synthetic narration), category PEOPLE_BLOGS.
 - Times: `schedule.slots` in America/New_York (06:30 Inner Wisdom, 12:00 Soul Connections, 18:00 Beyond the Visible). Metricool gets the
   IANA zone per post, so daylight-saving changes are handled automatically.
@@ -69,3 +70,9 @@ After it is scheduled, append one line with the same fields to `content/archive.
 
 ## State
 `state/posts.json`: `{"posts": {"<id>": {"date","slot","status": "scripted|rendered|scheduled|published|failed","release","metricoolId","plannerUrl","attempts"}}}`
+
+## Status log
+- 2026-11-08: pipeline live. Test publication trial-03 (Metricool 421032749, 21:30 Amsterdam). First stock of 21 Shorts scheduled 9–15 Nov
+  (ids in state/posts.json). Daily scheduled task "Whispers dagelijkse productie" keeps the 7-day buffer.
+- Planned next (approved by Hans 2026-11-08): weekly long videos, 1920x1080 – A weekly compilation (Sun), B new long reflection/meditation (Wed),
+  C 30–60 min calm music video (Fri). Not built yet – until wots/long.py exists the daily run only makes Shorts.

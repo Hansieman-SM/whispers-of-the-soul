@@ -1,1 +1,203 @@
-{"posts": {}}
+{
+ "posts": {
+  "trial-03-spirit-guides": {
+   "date": "2026-11-08",
+   "slot": "test",
+   "status": "scheduled",
+   "release": "trial-03-spirit-guides",
+   "metricoolId": 421032749,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4662187566225538048",
+   "attempts": 1,
+   "note": "Test publication 2026-11-08 21:30 Europe/Amsterdam"
+  },
+  "2026-11-09-A-inner-knowing": {
+   "date": "2026-11-09",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-09-A-inner-knowing",
+   "metricoolId": 421033091,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5976477465777228689",
+   "attempts": 1
+  },
+  "2026-11-09-B-soulmates": {
+   "date": "2026-11-09",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-09-B-soulmates",
+   "metricoolId": 421033144,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3052930076518205742",
+   "attempts": 1
+  },
+  "2026-11-09-C-dreams": {
+   "date": "2026-11-09",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-09-C-dreams",
+   "metricoolId": 421033191,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=8725090549589557837",
+   "attempts": 1
+  },
+  "2026-11-10-A-soul-purpose": {
+   "date": "2026-11-10",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-10-A-soul-purpose",
+   "metricoolId": 421033246,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-5989175544941688599",
+   "attempts": 1
+  },
+  "2026-11-10-B-nature": {
+   "date": "2026-11-10",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-10-B-nature",
+   "metricoolId": 421033305,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=314180755588074481",
+   "attempts": 1
+  },
+  "2026-11-10-C-angels": {
+   "date": "2026-11-10",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-10-C-angels",
+   "metricoolId": 421033377,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3385978177836108725",
+   "attempts": 1
+  },
+  "2026-11-11-A-acceptance": {
+   "date": "2026-11-11",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-11-A-acceptance",
+   "metricoolId": 421033464,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1421147602900991079",
+   "attempts": 1
+  },
+  "2026-11-11-B-twin-flames": {
+   "date": "2026-11-11",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-11-B-twin-flames",
+   "metricoolId": 421033744,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=8426275472043888454",
+   "attempts": 1
+  },
+  "2026-11-11-C-spirit-guides": {
+   "date": "2026-11-11",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-11-C-spirit-guides",
+   "metricoolId": 421033772,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=2454555442626511435",
+   "attempts": 1
+  },
+  "2026-11-12-A-letting-go": {
+   "date": "2026-11-12",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-12-A-letting-go",
+   "metricoolId": 421033829,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-8169911402099226855",
+   "attempts": 1
+  },
+  "2026-11-12-B-animals": {
+   "date": "2026-11-12",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-12-B-animals",
+   "metricoolId": 421033882,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=4996611642316443620",
+   "attempts": 1
+  },
+  "2026-11-12-C-past-lives": {
+   "date": "2026-11-12",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-12-C-past-lives",
+   "metricoolId": 421033938,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3889626928057503581",
+   "attempts": 1
+  },
+  "2026-11-13-A-inner-knowing": {
+   "date": "2026-11-13",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-13-A-inner-knowing",
+   "metricoolId": 421033988,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1673154803727186766",
+   "attempts": 1
+  },
+  "2026-11-13-B-soulmates": {
+   "date": "2026-11-13",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-13-B-soulmates",
+   "metricoolId": 421034034,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=133541501497721680",
+   "attempts": 1
+  },
+  "2026-11-13-C-source": {
+   "date": "2026-11-13",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-13-C-source",
+   "metricoolId": 421034214,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1576015852019429989",
+   "attempts": 1
+  },
+  "2026-11-14-A-soul-purpose": {
+   "date": "2026-11-14",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-14-A-soul-purpose",
+   "metricoolId": 421034261,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5522823976469260",
+   "attempts": 1
+  },
+  "2026-11-14-B-nature": {
+   "date": "2026-11-14",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-14-B-nature",
+   "metricoolId": 421034303,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1586370533516033782",
+   "attempts": 1
+  },
+  "2026-11-14-C-spirit-world": {
+   "date": "2026-11-14",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-14-C-spirit-world",
+   "metricoolId": 421034364,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7069251822825158211",
+   "attempts": 1
+  },
+  "2026-11-15-A-acceptance": {
+   "date": "2026-11-15",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "2026-11-15-A-acceptance",
+   "metricoolId": 421034413,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5697217756418165447",
+   "attempts": 1
+  },
+  "2026-11-15-B-twin-flames": {
+   "date": "2026-11-15",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "2026-11-15-B-twin-flames",
+   "metricoolId": 421034515,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7659545863110177650",
+   "attempts": 1
+  },
+  "2026-11-15-C-parallel-worlds": {
+   "date": "2026-11-15",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "2026-11-15-C-parallel-worlds",
+   "metricoolId": 421034560,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-938268477303403295",
+   "attempts": 1
+  }
+ }
+}
