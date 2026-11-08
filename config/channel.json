@@ -8,9 +8,9 @@
   "slogan": "Pause. Breathe. Listen within.",
   "language": "en",
   "metricool": {
-    "brandId": null,
+    "brandId": 7965951,
     "brandLabel": "Whispers of the Soul",
-    "note": "Fill brandId once the Metricool brand 'Whispers of the Soul' exists with YouTube linked. Never schedule while null."
+    "note": "Brand 'Whispers of the Soul' (created 2026-11-08), YouTube UCQm6OQ778XEs7kJ-SoCx_ug linked. Verify networksData.youtubeData == youtubeChannelId before every scheduling run."
   },
   "hosting": {
     "repo": "Hansieman-SM/whispers-of-the-soul",
@@ -20,9 +20,21 @@
     "timezone": "America/New_York",
     "why": "Largest English-speaking audience; Metricool receives the IANA zone per post, so US daylight-saving changes are handled automatically.",
     "slots": [
-      {"slot": "A", "time": "06:30", "category": "Inner Wisdom"},
-      {"slot": "B", "time": "12:00", "category": "Soul Connections"},
-      {"slot": "C", "time": "18:00", "category": "Beyond the Visible"}
+      {
+        "slot": "A",
+        "time": "06:30",
+        "category": "Inner Wisdom"
+      },
+      {
+        "slot": "B",
+        "time": "12:00",
+        "category": "Soul Connections"
+      },
+      {
+        "slot": "C",
+        "time": "18:00",
+        "category": "Beyond the Visible"
+      }
     ],
     "bufferDays": 7
   },
@@ -34,53 +46,247 @@
     "sentencePause": 0.55
   },
   "video": {
-    "width": 1080, "height": 1920, "fps": 30,
-    "minSeconds": 35, "maxSeconds": 55,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "minSeconds": 35,
+    "maxSeconds": 55,
     "outroSeconds": 2.6,
-    "minWords": 88, "maxWords": 128,
+    "minWords": 88,
+    "maxWords": 128,
     "wordsNote": "Measured: af_heart at speed 0.88 speaks ~2.6 words/s incl. pauses -> 88-128 words = ~36-52 s incl. outro"
   },
   "categories": {
-    "Inner Wisdom": ["inner-knowing", "soul-purpose", "acceptance", "letting-go"],
-    "Soul Connections": ["soulmates", "nature", "twin-flames", "animals"],
-    "Beyond the Visible": ["dreams", "angels", "spirit-guides", "past-lives", "source", "spirit-world", "parallel-worlds", "life-after-death"]
+    "Inner Wisdom": [
+      "inner-knowing",
+      "soul-purpose",
+      "acceptance",
+      "letting-go"
+    ],
+    "Soul Connections": [
+      "soulmates",
+      "nature",
+      "twin-flames",
+      "animals"
+    ],
+    "Beyond the Visible": [
+      "dreams",
+      "angels",
+      "spirit-guides",
+      "past-lives",
+      "source",
+      "spirit-world",
+      "parallel-worlds",
+      "life-after-death"
+    ]
   },
   "topics": {
-    "soul-purpose":     {"name": "Soul Purpose",                     "scenes": ["forest", "feather", "dawnclouds", "nebula"]},
-    "letting-go":       {"name": "Letting Go",                       "scenes": ["moonsea", "birds", "feather", "dawnclouds"]},
-    "acceptance":       {"name": "Acceptance",                       "scenes": ["moonsea", "dawnclouds", "forest", "aurora"]},
-    "soulmates":        {"name": "Soulmates",                        "scenes": ["aurora", "moonsea", "feather", "nebula"]},
-    "twin-flames":      {"name": "Twin Flames",                      "scenes": ["aurora", "nebula", "feather", "dawnclouds"]},
-    "parallel-worlds":  {"name": "Parallel Worlds",                  "scenes": ["nebula", "aurora", "moonsea"]},
-    "spirit-world":     {"name": "The Spirit World",                 "scenes": ["dawnclouds", "nebula", "feather"]},
-    "source":           {"name": "Source",                           "scenes": ["nebula", "dawnclouds", "feather"]},
-    "life-after-death": {"name": "Life After Death",                 "scenes": ["dawnclouds", "moonsea", "nebula"]},
-    "past-lives":       {"name": "Soul Regression & Past Lives",     "scenes": ["nebula", "forest", "moonsea"]},
-    "inner-knowing":    {"name": "Inner Knowing & Intuition",        "scenes": ["forest", "feather", "moonsea", "aurora"]},
-    "dreams":           {"name": "Dreams & Their Meaning",           "scenes": ["moonsea", "nebula", "aurora"]},
-    "nature":           {"name": "Nature & Spiritual Connection",    "scenes": ["forest", "aurora", "birds", "moonsea"]},
-    "animals":          {"name": "Animals & Spiritual Connection",   "scenes": ["birds", "whale", "forest"]},
-    "angels":           {"name": "Angels",                           "scenes": ["feather", "dawnclouds", "nebula"]},
-    "spirit-guides":    {"name": "Spirit Guides",                    "scenes": ["forest", "feather", "aurora", "whale"]}
+    "soul-purpose": {
+      "name": "Soul Purpose",
+      "scenes": [
+        "forest",
+        "feather",
+        "dawnclouds",
+        "nebula"
+      ]
+    },
+    "letting-go": {
+      "name": "Letting Go",
+      "scenes": [
+        "moonsea",
+        "birds",
+        "feather",
+        "dawnclouds"
+      ]
+    },
+    "acceptance": {
+      "name": "Acceptance",
+      "scenes": [
+        "moonsea",
+        "dawnclouds",
+        "forest",
+        "aurora"
+      ]
+    },
+    "soulmates": {
+      "name": "Soulmates",
+      "scenes": [
+        "aurora",
+        "moonsea",
+        "feather",
+        "nebula"
+      ]
+    },
+    "twin-flames": {
+      "name": "Twin Flames",
+      "scenes": [
+        "aurora",
+        "nebula",
+        "feather",
+        "dawnclouds"
+      ]
+    },
+    "parallel-worlds": {
+      "name": "Parallel Worlds",
+      "scenes": [
+        "nebula",
+        "aurora",
+        "moonsea"
+      ]
+    },
+    "spirit-world": {
+      "name": "The Spirit World",
+      "scenes": [
+        "dawnclouds",
+        "nebula",
+        "feather"
+      ]
+    },
+    "source": {
+      "name": "Source",
+      "scenes": [
+        "nebula",
+        "dawnclouds",
+        "feather"
+      ]
+    },
+    "life-after-death": {
+      "name": "Life After Death",
+      "scenes": [
+        "dawnclouds",
+        "moonsea",
+        "nebula"
+      ]
+    },
+    "past-lives": {
+      "name": "Soul Regression & Past Lives",
+      "scenes": [
+        "nebula",
+        "forest",
+        "moonsea"
+      ]
+    },
+    "inner-knowing": {
+      "name": "Inner Knowing & Intuition",
+      "scenes": [
+        "forest",
+        "feather",
+        "moonsea",
+        "aurora"
+      ]
+    },
+    "dreams": {
+      "name": "Dreams & Their Meaning",
+      "scenes": [
+        "moonsea",
+        "nebula",
+        "aurora"
+      ]
+    },
+    "nature": {
+      "name": "Nature & Spiritual Connection",
+      "scenes": [
+        "forest",
+        "aurora",
+        "birds",
+        "moonsea"
+      ]
+    },
+    "animals": {
+      "name": "Animals & Spiritual Connection",
+      "scenes": [
+        "birds",
+        "whale",
+        "forest"
+      ]
+    },
+    "angels": {
+      "name": "Angels",
+      "scenes": [
+        "feather",
+        "dawnclouds",
+        "nebula"
+      ]
+    },
+    "spirit-guides": {
+      "name": "Spirit Guides",
+      "scenes": [
+        "forest",
+        "feather",
+        "aurora",
+        "whale"
+      ]
+    }
   },
   "hashtags": {
-    "base": ["#spirituality", "#shorts"],
-    "soul-purpose": ["#soulpurpose", "#innergrowth"],
-    "letting-go": ["#lettinggo", "#innerpeace"],
-    "acceptance": ["#acceptance", "#innerpeace"],
-    "soulmates": ["#soulmates", "#soulconnection"],
-    "twin-flames": ["#twinflames", "#soulconnection"],
-    "parallel-worlds": ["#parallelworlds", "#consciousness"],
-    "spirit-world": ["#spiritworld", "#consciousness"],
-    "source": ["#source", "#consciousness"],
-    "life-after-death": ["#afterlife", "#spiritualreflection"],
-    "past-lives": ["#pastlives", "#soulregression"],
-    "inner-knowing": ["#intuition", "#innerwisdom"],
-    "dreams": ["#dreams", "#dreammeaning"],
-    "nature": ["#natureconnection", "#mindfulness"],
-    "animals": ["#spiritanimals", "#natureconnection"],
-    "angels": ["#angels", "#spiritualreflection"],
-    "spirit-guides": ["#spiritguides", "#intuition"]
+    "base": [
+      "#spirituality",
+      "#shorts"
+    ],
+    "soul-purpose": [
+      "#soulpurpose",
+      "#innergrowth"
+    ],
+    "letting-go": [
+      "#lettinggo",
+      "#innerpeace"
+    ],
+    "acceptance": [
+      "#acceptance",
+      "#innerpeace"
+    ],
+    "soulmates": [
+      "#soulmates",
+      "#soulconnection"
+    ],
+    "twin-flames": [
+      "#twinflames",
+      "#soulconnection"
+    ],
+    "parallel-worlds": [
+      "#parallelworlds",
+      "#consciousness"
+    ],
+    "spirit-world": [
+      "#spiritworld",
+      "#consciousness"
+    ],
+    "source": [
+      "#source",
+      "#consciousness"
+    ],
+    "life-after-death": [
+      "#afterlife",
+      "#spiritualreflection"
+    ],
+    "past-lives": [
+      "#pastlives",
+      "#soulregression"
+    ],
+    "inner-knowing": [
+      "#intuition",
+      "#innerwisdom"
+    ],
+    "dreams": [
+      "#dreams",
+      "#dreammeaning"
+    ],
+    "nature": [
+      "#natureconnection",
+      "#mindfulness"
+    ],
+    "animals": [
+      "#spiritanimals",
+      "#natureconnection"
+    ],
+    "angels": [
+      "#angels",
+      "#spiritualreflection"
+    ],
+    "spirit-guides": [
+      "#spiritguides",
+      "#intuition"
+    ]
   },
   "ctaEvery": 3,
   "aiDisclosure": {

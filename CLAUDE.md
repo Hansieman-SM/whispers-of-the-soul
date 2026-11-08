@@ -5,7 +5,7 @@ Channel: https://www.youtube.com/@WhispersoftheSoulChannel (channel ID UCQm6OQ77
 Slogan: **Pause. Breathe. Listen within.** Config: `config/channel.json` (single source of truth).
 
 This project is completely separate from Still Waters Daily and Toet Toet and Friends. Never touch their repos,
-Metricool brands (7823324, 7587077) or posts.
+Metricool brands (7823324, 7587077) or posts. Our brand: 7965951.
 
 ## Hard rules
 - **Pause switch:** if `config/channel.json` has `"paused": true`, do nothing except send Hans one line that production is paused.
