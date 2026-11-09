@@ -11,6 +11,9 @@ Metricool brands (7823324, 7587077) or posts. Our brand: 7965951.
 - **Pause switch:** if `config/channel.json` has `"paused": true`, do nothing except send Hans one line that production is paused.
 - Publish only to the Metricool brand in `metricool.brandId` and only if that brand's `networksData.youtubeData` equals
   `youtubeChannelId` (check with getBrandSettings every run). If brandId is null or the channel does not match: schedule nothing, tell Hans.
+- Since 2026-11-09 every Short goes to **YouTube + Instagram (Reel) + TikTok** in one Metricool post (`metricool.networks`).
+  Also check `networksData.instagramData` / `tiktokData` == `metricool.instagramData` / `tiktokData` (both `whispersofthesoulchannel`).
+  If one of those is missing/different: still schedule YouTube, drop that network (`wots.postdata ... --networks youtube,...`), tell Hans.
 - Never publish immediately; always schedule ahead (rolling buffer `schedule.bufferDays` = 7 days = 21 videos).
 - Never schedule a video that failed textcheck, render, QC or the visual contact-sheet check. A gap in the schedule is better than a bad video.
 - No duplicates: before scheduling check `state/posts.json` AND Metricool getScheduledPosts for that date/slot. Record every Metricool
@@ -51,6 +54,8 @@ After it is scheduled, append one line with the same fields to `content/archive.
   videoThumbnailUrl. Call Metricool createScheduledPost with blogId, date and info, after adding `"videoThumbnailUrl"` into the info object
   (works on this channel, tested 2026-11-08). If Metricool rejects it (VIDEO_THUMBNAIL_NOT_APPLICABLE), schedule without it.
   YouTube: type "short", madeForKids false, isAiGeneratedContent true (synthetic narration), category PEOPLE_BLOGS.
+  Instagram: type REEL, showReelOnFeed true, isAiGenerated true. TikTok: PUBLIC_TO_EVERYONE, isAigc true, `title` REQUIRED (= script title).
+  One caption for all three networks (no #shorts; base hashtags #spirituality #selfreflection).
 - Times: `schedule.slots` in America/New_York (06:30 Inner Wisdom, 12:00 Soul Connections, 18:00 Beyond the Visible). Metricool gets the
   IANA zone per post, so daylight-saving changes are handled automatically.
 
@@ -62,6 +67,10 @@ After it is scheduled, append one line with the same fields to `content/archive.
    Any other provider in ERROR (no publicUrl), or PENDING > 30 min after its
    time: fix if possible (updateScheduledPost to a time ≥ 15 min ahead, same content) – max 2 attempts per post, tracked in state.
    If it needs Hans (disconnected account, permissions, limits), tell him exactly what to do.
+   MIXED STATUS (e.g. YouTube PUBLISHED but Instagram/TikTok ERROR): NEVER updateScheduledPost that post – it could re-publish to the
+   networks that already succeeded (duplicate). Instead create ONE new post with only the failed network(s), same media/caption, time
+   ≥ 15 min ahead, after checking state + getScheduledPosts that no such retry post exists yet; record its id in state under
+   `retries` of that script id (max 2 per network). Every post is per-network in state: `networks`, and per-network status where known.
 3. Reconcile `state/posts.json` with Metricool (published / scheduled / failed).
 4. `wots.plan` → write the missing scripts (normally 3: day +7), textcheck until OK, commit + push, wait for the Actions run
    (`gh` is not authenticated in scheduled sessions; poll `https://api.github.com/repos/Hansieman-SM/whispers-of-the-soul/releases/tags/<id>`
@@ -81,4 +90,6 @@ After it is scheduled, append one line with the same fields to `content/archive.
   C 30–60 min calm music video (Fri). Not built yet – until wots/long.py exists the daily run only makes Shorts.
 - 2026-11-08: launch set of 5 extra Shorts (Hans approved) 21:55–23:35 Amsterdam, slot 'S' ids 2026-11-08-S1..S5.
 - 2026-11-08 21:30: first Short live (https://www.youtube.com/shorts/L6XgrruqbJw). Metricool reported 'published with warnings: Could not upload video thumbnail' → channel needs phone verification for custom thumbnails (asked Hans). Hans verified the phone at 21:46 – custom thumbnails should work from then on.
+- 2026-11-09: Instagram + TikTok (whispersofthesoulchannel) connected to brand 7965951 (Hans). All 23 still-scheduled posts (9 Nov 18:00
+  Amsterdam → 17 Nov) updated to YouTube+Instagram+TikTok (new Metricool ids in state). wots.postdata now builds all three networks.
 - 2026-11-08 21:55: first post after verification published cleanly with custom thumbnail (lLVeCUmRBGI).

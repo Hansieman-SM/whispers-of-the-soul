@@ -10,7 +10,14 @@
   "metricool": {
     "brandId": 7965951,
     "brandLabel": "Whispers of the Soul",
-    "note": "Brand 'Whispers of the Soul' (created 2026-11-08), YouTube UCQm6OQ778XEs7kJ-SoCx_ug linked. Verify networksData.youtubeData == youtubeChannelId before every scheduling run."
+    "note": "Brand 'Whispers of the Soul' (created 2026-11-08), YouTube UCQm6OQ778XEs7kJ-SoCx_ug linked. Verify networksData.youtubeData == youtubeChannelId before every scheduling run. Since 2026-11-09 also Instagram and TikTok (both whispersofthesoulchannel): verify networksData.instagramData/tiktokData too; a mismatching network is dropped from new posts (and Hans is told), YouTube mismatch = schedule nothing.",
+    "networks": [
+      "youtube",
+      "instagram",
+      "tiktok"
+    ],
+    "instagramData": "whispersofthesoulchannel",
+    "tiktokData": "whispersofthesoulchannel"
   },
   "hosting": {
     "repo": "Hansieman-SM/whispers-of-the-soul",
@@ -221,7 +228,7 @@
   "hashtags": {
     "base": [
       "#spirituality",
-      "#shorts"
+      "#selfreflection"
     ],
     "soul-purpose": [
       "#soulpurpose",
@@ -286,7 +293,8 @@
     "spirit-guides": [
       "#spiritguides",
       "#intuition"
-    ]
+    ],
+    "note": "#shorts removed 2026-11-09: one caption is shared by YouTube, Instagram and TikTok; youtubeData.type='short' already marks Shorts."
   },
   "ctaEvery": 3,
   "aiDisclosure": {

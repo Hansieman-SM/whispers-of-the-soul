@@ -7,7 +7,10 @@ ROOT = os.path.join(os.path.dirname(__file__), '..')
 CFG = json.load(open(os.path.join(ROOT, 'config', 'channel.json')))
 
 
-def build(sid, tag, at=None):
+def build(sid, tag, at=None, nets=None):
+    nets = nets or CFG['metricool'].get('networks', ['youtube'])
+    if 'youtube' not in nets:
+        raise SystemExit('REFUSED: youtube must always be included')
     s = json.load(open(os.path.join(ROOT, 'content', 'scripts', sid + '.json')))
     brand = CFG['metricool']['brandId']
     if not brand:
@@ -27,11 +30,16 @@ def build(sid, tag, at=None):
         'autoPublish': True, 'draft': False, 'text': text, 'firstCommentText': '', 'descendants': [], 'hasNotReadNotes': False,
         'shortener': False, 'smartLinkData': {'ids': []}, 'mediaAltText': [],
         'media': [url(sid + '.mp4')],
-        'providers': [{'network': 'youtube'}],
+        'providers': [{'network': n} for n in nets],
         'publicationDate': {'dateTime': f"{date}T{time}:00", 'timezone': CFG['schedule']['timezone']},
         'youtubeData': {'title': s['title'][:95], 'type': 'short', 'privacy': 'public', 'tags': yt_tags, 'category': 'PEOPLE_BLOGS',
                         'madeForKids': False, 'isAiGeneratedContent': CFG['aiDisclosure']['youtube_isAiGeneratedContent']},
     }
+    if 'instagram' in nets:
+        info['instagramData'] = {'type': 'REEL', 'showReelOnFeed': True, 'isAiGenerated': True}
+    if 'tiktok' in nets:
+        info['tiktokData'] = {'privacyOption': 'PUBLIC_TO_EVERYONE', 'disableComment': False, 'disableDuet': False, 'disableStitch': False,
+                              'commercialContentThirdParty': False, 'commercialContentOwnBrand': False, 'autoAddMusic': False, 'isAigc': True, 'title': s['title'][:90]}
     off = dt.datetime.fromisoformat(f"{date}T{time}").replace(tzinfo=ZoneInfo(CFG['schedule']['timezone'])).strftime('%z')
     return {'blogId': str(brand), 'date': f"{date}T{time}:00{off[:3]}:{off[3:]}", 'videoThumbnailUrl': url(sid + '_thumb.jpg'), 'timezone': CFG['schedule']['timezone'],
             'thumbnail': url(sid + '_thumb.jpg'), 'info': json.dumps(info)}
@@ -39,4 +47,6 @@ def build(sid, tag, at=None):
 
 if __name__ == '__main__':
     a = sys.argv  # optional: --at YYYY-MM-DDTHH:MM (in schedule.timezone) for one-off posts such as the test publication
-    print(json.dumps(build(a[1], a[2], a[a.index('--at') + 1] if '--at' in a else None), indent=1))
+    # optional: --networks youtube,instagram (drop a network whose Metricool account is not the expected one)
+    nets = a[a.index('--networks') + 1].split(',') if '--networks' in a else None
+    print(json.dumps(build(a[1], a[2], a[a.index('--at') + 1] if '--at' in a else None, nets), indent=1))
