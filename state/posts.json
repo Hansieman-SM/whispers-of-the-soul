@@ -261,29 +261,29 @@
     "2026-11-16-A-letting-go": {
       "date": "2026-11-16",
       "slot": "A",
-      "status": "scripted",
-      "release": null,
-      "metricoolId": null,
-      "plannerUrl": null,
-      "attempts": 0
+      "status": "scheduled",
+      "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-A-letting-go",
+      "metricoolId": 421495453,
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6152135406763226966",
+      "attempts": 1
     },
     "2026-11-16-B-animals": {
       "date": "2026-11-16",
       "slot": "B",
-      "status": "scripted",
-      "release": null,
-      "metricoolId": null,
-      "plannerUrl": null,
-      "attempts": 0
+      "status": "scheduled",
+      "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-B-animals",
+      "metricoolId": 421495655,
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4372251369574612419",
+      "attempts": 1
     },
     "2026-11-16-C-life-after-death": {
       "date": "2026-11-16",
       "slot": "C",
-      "status": "scripted",
-      "release": null,
-      "metricoolId": null,
-      "plannerUrl": null,
-      "attempts": 0
+      "status": "scheduled",
+      "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-C-life-after-death",
+      "metricoolId": 421495820,
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3252989671221542096",
+      "attempts": 1
     }
   }
 }
