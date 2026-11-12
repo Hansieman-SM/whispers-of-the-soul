@@ -585,11 +585,16 @@
   "2026-11-19-B-twin-flames": {
    "date": "2026-11-19",
    "slot": "B",
-   "status": "scripted",
-   "release": null,
-   "metricoolId": null,
-   "plannerUrl": null,
-   "attempts": 0
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-B-twin-flames",
+   "metricoolId": 425400494,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1027992685599212722",
+   "attempts": 1,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   },
   "2026-11-19-C-spirit-guides": {
    "date": "2026-11-19",
