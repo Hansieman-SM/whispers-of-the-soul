@@ -221,7 +221,7 @@
   "2026-11-12-A-letting-go": {
    "date": "2026-11-12",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-12-A-letting-go",
    "metricoolId": 421918644,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-8169911402099226855",
@@ -230,12 +230,17 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   }
   },
   "2026-11-12-B-animals": {
    "date": "2026-11-12",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-12-B-animals",
    "metricoolId": 421919264,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=4996611642316443620",
@@ -244,12 +249,17 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   }
   },
   "2026-11-12-C-past-lives": {
    "date": "2026-11-12",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-12-C-past-lives",
    "metricoolId": 421919287,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3889626928057503581",
@@ -258,133 +268,174 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   }
   },
   "2026-11-13-A-inner-knowing": {
    "date": "2026-11-13",
    "slot": "A",
    "status": "scheduled",
    "release": "2026-11-13-A-inner-knowing",
-   "metricoolId": 421919333,
+   "metricoolId": 426604733,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1673154803727186766",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421919333
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-13-B-soulmates": {
    "date": "2026-11-13",
    "slot": "B",
    "status": "scheduled",
    "release": "2026-11-13-B-soulmates",
-   "metricoolId": 421919353,
+   "metricoolId": 426605106,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=133541501497721680",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421919353
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-13-C-source": {
    "date": "2026-11-13",
    "slot": "C",
    "status": "scheduled",
    "release": "2026-11-13-C-source",
-   "metricoolId": 421919980,
+   "metricoolId": 426605410,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1576015852019429989",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421919980
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-14-A-soul-purpose": {
    "date": "2026-11-14",
    "slot": "A",
    "status": "scheduled",
    "release": "2026-11-14-A-soul-purpose",
-   "metricoolId": 421920017,
+   "metricoolId": 426605427,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5522823976469260",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920017
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-14-B-nature": {
    "date": "2026-11-14",
    "slot": "B",
    "status": "scheduled",
    "release": "2026-11-14-B-nature",
-   "metricoolId": 421920039,
+   "metricoolId": 426605443,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1586370533516033782",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920039
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-14-C-spirit-world": {
    "date": "2026-11-14",
    "slot": "C",
    "status": "scheduled",
    "release": "2026-11-14-C-spirit-world",
-   "metricoolId": 421920084,
+   "metricoolId": 426605777,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7069251822825158211",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920084
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-15-A-acceptance": {
    "date": "2026-11-15",
    "slot": "A",
    "status": "scheduled",
    "release": "2026-11-15-A-acceptance",
-   "metricoolId": 421920878,
+   "metricoolId": 426605795,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5697217756418165447",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920878
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-15-B-twin-flames": {
    "date": "2026-11-15",
    "slot": "B",
    "status": "scheduled",
    "release": "2026-11-15-B-twin-flames",
-   "metricoolId": 421920895,
+   "metricoolId": 426605807,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7659545863110177650",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920895
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-15-C-parallel-worlds": {
    "date": "2026-11-15",
    "slot": "C",
    "status": "scheduled",
    "release": "2026-11-15-C-parallel-worlds",
-   "metricoolId": 421920922,
+   "metricoolId": 426605835,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-938268477303403295",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920922
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-08-S1-soul-purpose": {
    "date": "2026-11-08",
@@ -447,168 +498,216 @@
    "slot": "A",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-A-letting-go",
-   "metricoolId": 421920948,
+   "metricoolId": 426606208,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6152135406763226966",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920948
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-16-B-animals": {
    "date": "2026-11-16",
    "slot": "B",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-B-animals",
-   "metricoolId": 421920967,
+   "metricoolId": 426606224,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4372251369574612419",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421920967
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-16-C-life-after-death": {
    "date": "2026-11-16",
    "slot": "C",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-C-life-after-death",
-   "metricoolId": 421916108,
+   "metricoolId": 426606235,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3252989671221542096",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    421916108
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-17-A-inner-knowing": {
    "date": "2026-11-17",
    "slot": "A",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-17-A-inner-knowing",
-   "metricoolId": 422851737,
+   "metricoolId": 426606255,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=6315274719255874563",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    422851737
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-17-B-soulmates": {
    "date": "2026-11-17",
    "slot": "B",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-17-B-soulmates",
-   "metricoolId": 422851973,
+   "metricoolId": 426606587,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6035331301956432135",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    422851973
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-17-C-dreams": {
    "date": "2026-11-17",
    "slot": "C",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-17-C-dreams",
-   "metricoolId": 422852125,
+   "metricoolId": 426606598,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6983901539240621884",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    422852125
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-18-A-soul-purpose": {
    "date": "2026-11-18",
    "slot": "A",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-18-A-soul-purpose",
-   "metricoolId": 425396469,
+   "metricoolId": 426606606,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=7551183040264555040",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    425396469
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-18-B-nature": {
    "date": "2026-11-18",
    "slot": "B",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-18-B-nature",
-   "metricoolId": 425396696,
+   "metricoolId": 426606624,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4355880457616209326",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    425396696
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-18-C-angels": {
    "date": "2026-11-18",
    "slot": "C",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-18-C-angels",
-   "metricoolId": 425396832,
+   "metricoolId": 426606992,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4490175909418479905",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    425396832
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-19-A-acceptance": {
    "date": "2026-11-19",
    "slot": "A",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-A-acceptance",
-   "metricoolId": 425396952,
+   "metricoolId": 426607015,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2878694060935001089",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    425396952
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-19-B-twin-flames": {
    "date": "2026-11-19",
    "slot": "B",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-B-twin-flames",
-   "metricoolId": 425400494,
+   "metricoolId": 426607062,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1027992685599212722",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    425400494
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   },
   "2026-11-19-C-spirit-guides": {
    "date": "2026-11-19",
    "slot": "C",
    "status": "scheduled",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-C-spirit-guides",
-   "metricoolId": 425397090,
+   "metricoolId": 426607082,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-5955319663520300213",
    "attempts": 1,
    "networks": [
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "previousMetricoolIds": [
+    425397090
+   ],
+   "rerendered": "2026-11-13 subscribe outro"
   }
  }
 }

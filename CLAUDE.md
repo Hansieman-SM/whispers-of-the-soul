@@ -94,3 +94,5 @@ After it is scheduled, append one line with the same fields to `content/archive.
   Amsterdam → 17 Nov) updated to YouTube+Instagram+TikTok (new Metricool ids in state). wots.postdata now builds all three networks.
 - 2026-11-08 21:55: first post after verification published cleanly with custom thumbnail (lLVeCUmRBGI).
 - 2026-11-13: Hans asked for a subscribe call at the end of every video. render.py now always shows `outroCta` ("Subscribe for daily whispers") under the slogan; applies to every newly rendered video.
+- 2026-11-13: Hans approved re-rendering the 21 already-scheduled Shorts (13–19 Nov) with the subscribe outro (workflow_dispatch run 43379886132).
+  All 21 Metricool posts updated in place (same times/captions, new media); new Metricool ids in state (`previousMetricoolIds` kept).
