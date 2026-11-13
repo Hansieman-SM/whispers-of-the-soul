@@ -708,6 +708,24 @@
     425397090
    ],
    "rerendered": "2026-11-13 subscribe outro"
+  },
+  "2026-11-20-A-letting-go": {
+   "date": "2026-11-20",
+   "slot": "A",
+   "status": "scripted",
+   "attempts": 0
+  },
+  "2026-11-20-B-animals": {
+   "date": "2026-11-20",
+   "slot": "B",
+   "status": "scripted",
+   "attempts": 0
+  },
+  "2026-11-20-C-past-lives": {
+   "date": "2026-11-20",
+   "slot": "C",
+   "status": "scripted",
+   "attempts": 0
   }
  }
 }
