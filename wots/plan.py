@@ -46,7 +46,7 @@ def plan(days=7, start=None):
     n_cta = sum(1 for a in arch if a.get('cta'))
     return {'now': now.isoformat(timespec='minutes'), 'missing': missing,
             'recentByTopic': {t: recent.get(t, [])[-12:] for t in {m['topic'] for m in missing}},
-            'ctaHint': f'set "cta": true on about every {CFG["ctaEvery"]}rd video (archive has {n_cta} of {len(arch)})'}
+            'ctaHint': 'every video now ends with the subscribe line automatically; set "cta": true in new scripts'}
 
 
 if __name__ == '__main__':

@@ -297,6 +297,8 @@
     "note": "#shorts removed 2026-11-09: one caption is shared by YouTube, Instagram and TikTok; youtubeData.type='short' already marks Shorts."
   },
   "ctaEvery": 3,
+  "outroCta": "Subscribe for daily whispers",
+  "outroCtaNote": "Shown under the slogan at the end of EVERY video since 2026-11-13 (Hans asked for subscribe on every video). The script field cta is kept for history only.",
   "aiDisclosure": {
     "youtube_isAiGeneratedContent": true,
     "why": "Synthetic narrator voice. YouTube asks creators to label realistic synthetic content; we declare it to be safe.",

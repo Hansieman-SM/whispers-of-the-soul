@@ -122,7 +122,7 @@ def render(script_path, outdir):
         blocks.append((s, min(e + 0.12, nxt - 0.03), text_block(wrap(p, capf, CAP_W), capf, WARM_WHITE)))
     topic_blk = text_block([topic['name'].upper()], font('Cinzel[wght].ttf', 32, 'Regular'), GOLD, shadow=0.75, track=3)
     slogan = text_block([CFG['slogan']], font('CormorantGaramond-Italic[wght].ttf', 68, 'Medium Italic'), WARM_WHITE)
-    cta = text_block(['Follow for daily whispers'], font('Lato-Regular.ttf', 42), GOLD, shadow=0.7) if script.get('cta') else None
+    cta = text_block([CFG.get('outroCta', 'Subscribe for daily whispers')], font('Lato-Regular.ttf', 44), GOLD, shadow=0.7)  # on every video since 2026-11-13 (Hans)
     em, name = header_block()
 
     yy = np.arange(H, dtype=np.float32)[:, None]

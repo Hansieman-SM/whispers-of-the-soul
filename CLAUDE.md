@@ -32,7 +32,7 @@ Metricool brands (7823324, 7587077) or posts. Our brand: 7965951.
 - Twin flames / soulmates: mutual respect, freedom and healthy boundaries are central. Pain, rejection or crossed boundaries are never
   proof of a destined bond. Regression imagery is never presented as reliable memory or historical evidence.
 - 88–128 words (≈ 36–52 s incl. outro). Title ≤ 90 chars, no clickbait, no ALL CAPS. `description`: 1–2 calm sentences.
-- About every 3rd video `"cta": true` (adds a small "Follow for daily whispers" under the slogan at the end).
+- Since 2026-11-13 EVERY video ends with "Subscribe for daily whispers" under the slogan (`outroCta` in config, Hans's request). Set `"cta": true` in new scripts (field kept for history).
 
 ## Script file
 `content/scripts/<date>-<slot>-<topic>.json`:
@@ -93,3 +93,4 @@ After it is scheduled, append one line with the same fields to `content/archive.
 - 2026-11-09: Instagram + TikTok (whispersofthesoulchannel) connected to brand 7965951 (Hans). All 23 still-scheduled posts (9 Nov 18:00
   Amsterdam → 17 Nov) updated to YouTube+Instagram+TikTok (new Metricool ids in state). wots.postdata now builds all three networks.
 - 2026-11-08 21:55: first post after verification published cleanly with custom thumbnail (lLVeCUmRBGI).
+- 2026-11-13: Hans asked for a subscribe call at the end of every video. render.py now always shows `outroCta` ("Subscribe for daily whispers") under the slogan; applies to every newly rendered video.
