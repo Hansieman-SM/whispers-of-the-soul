@@ -761,16 +761,22 @@
    "release": null,
    "metricoolId": null,
    "plannerUrl": null,
-   "attempts": 0
+   "attempts": 1
   },
   "2026-11-21-B-animals": {
    "date": "2026-11-21",
    "slot": "B",
-   "status": "scripted",
-   "release": null,
-   "metricoolId": null,
-   "plannerUrl": null,
-   "attempts": 0
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-21-B-animals",
+   "metricoolId": 427828625,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6981391600478828532",
+   "attempts": 0,
+   "uuid": "-6981391600478828532",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   },
   "2026-11-21-C-past-lives": {
    "date": "2026-11-21",
@@ -779,7 +785,7 @@
    "release": null,
    "metricoolId": null,
    "plannerUrl": null,
-   "attempts": 0
+   "attempts": 1
   }
  }
 }
