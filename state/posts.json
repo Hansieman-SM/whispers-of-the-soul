@@ -278,7 +278,7 @@
   "2026-11-13-A-inner-knowing": {
    "date": "2026-11-13",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-13-A-inner-knowing",
    "metricoolId": 426604733,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1673154803727186766",
@@ -296,7 +296,7 @@
   "2026-11-13-B-soulmates": {
    "date": "2026-11-13",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-13-B-soulmates",
    "metricoolId": 426605106,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=133541501497721680",
@@ -314,7 +314,7 @@
   "2026-11-13-C-source": {
    "date": "2026-11-13",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-13-C-source",
    "metricoolId": 426605410,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-1576015852019429989",
@@ -712,19 +712,49 @@
   "2026-11-20-A-letting-go": {
    "date": "2026-11-20",
    "slot": "A",
-   "status": "scripted",
-   "attempts": 0
+   "status": "rendered",
+   "attempts": 0,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-20-A-letting-go"
   },
   "2026-11-20-B-animals": {
    "date": "2026-11-20",
    "slot": "B",
-   "status": "scripted",
-   "attempts": 0
+   "status": "rendered",
+   "attempts": 0,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-20-B-animals"
   },
   "2026-11-20-C-past-lives": {
    "date": "2026-11-20",
    "slot": "C",
+   "status": "rendered",
+   "attempts": 0,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-20-C-past-lives"
+  },
+  "2026-11-21-A-letting-go": {
+   "date": "2026-11-21",
+   "slot": "A",
    "status": "scripted",
+   "release": null,
+   "metricoolId": null,
+   "plannerUrl": null,
+   "attempts": 0
+  },
+  "2026-11-21-B-animals": {
+   "date": "2026-11-21",
+   "slot": "B",
+   "status": "scripted",
+   "release": null,
+   "metricoolId": null,
+   "plannerUrl": null,
+   "attempts": 0
+  },
+  "2026-11-21-C-past-lives": {
+   "date": "2026-11-21",
+   "slot": "C",
+   "status": "scripted",
+   "release": null,
+   "metricoolId": null,
+   "plannerUrl": null,
    "attempts": 0
   }
  }
