@@ -832,11 +832,17 @@
   "2026-11-22-C-source": {
    "date": "2026-11-22",
    "slot": "C",
-   "status": "scripted",
-   "release": null,
-   "metricoolId": null,
-   "plannerUrl": null,
-   "attempts": 0
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-22-C-source",
+   "metricoolId": 428698727,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-423255341494482933",
+   "attempts": 2,
+   "uuid": "-423255341494482933",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   }
  }
 }
