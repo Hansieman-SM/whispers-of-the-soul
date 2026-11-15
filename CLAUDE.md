@@ -77,8 +77,29 @@ After it is scheduled, append one line with the same fields to `content/archive.
    with curl, max ~25 min). Retry a failed render once via a small fix + push. Still failing → do not schedule, tell Hans.
 5. QC json pass + sheet looked at → schedule → save post ids in state → append to archive → commit + push.
 6. Stock check: count scheduled future posts. Fewer than 15 → catch up (up to 9 scripts in one run).
+6b. Long videos: make sure the long videos of the next 7 days exist and are scheduled (see "Weekly long videos"): write the missing
+   script(s), longcheck, push, wait for render-long (poll the release API, max ~60 min), check QC + sheet, schedule, record in state.
 7. Report: if everything is fine, end with one Dutch line `Whispers: N video's ingepland t/m <datum>, geen problemen.` (no push).
    If anything failed or needs Hans: SendUserMessage + PushNotification in Dutch: what failed, what was fixed, what he must do.
+
+## Weekly long videos (16:9, built 2026-11-15 – Hans: "ja natuurlijk een lange video")
+Three per week, YouTube only (type video, 1920x1080, custom thumbnail 1280x720, chapters in the description):
+| Day (New York) | kind | what | time |
+|---|---|---|---|
+| Wednesday | `reflection` | new guided reflection/meditation, 3–6 sections, 1100–2200 words (≈ 9–14 min), af_heart, phrase captions | 20:00 |
+| Friday | `music` | 60 min original calm music over a slowly moving scene (title card + subscribe card) | 21:00 |
+| Sunday | `compilation` | the Shorts of the previous Sunday–Saturday back to back (blurred 16:9 backdrop), chapters per Short | 15:00 |
+Script: `content/long/<date>-<kind>-<slug>.json` (`date` = publication date in New York):
+- reflection: `{"id","date","kind","topic","title","thumbTitle","description","scene","sections":[{"heading","text"}]}` – every Content rule
+  above applies (beliefs framed as beliefs, no promises, no pressure, no attributed quotes). Rotate topics over all three categories;
+  never repeat a reflection topic within 6 weeks; vary the scene.
+- music: `{"id","date","kind","title","thumbTitle","minutes":60,"scene","description"}` – vary scene and title every week.
+- compilation: `{"id","date","kind","from","to","title","thumbTitle","scene","description"}` with from/to = the previous Sunday–Saturday.
+Gate: `python3 -m wots.longcheck content/long/<id>.json` must print OK. Push → `.github/workflows/render-long.yml` renders
+(`wots.long`, ~10–30 min per video), runs `wots.qc` (long branch) and makes the contact sheet; release tag = id, same URL pattern.
+LOOK at `<id>_sheet.jpg` and the thumbnail. Then `python3 -m wots.postdata <id>` (no tag argument for long videos) → ONE Metricool
+createScheduledPost (YouTube). Save the Metricool id in `state/posts.json` under the id (`"slot": "long"`). Keep the next long videos
+produced at least 3 days before they go live; failed render → one fix, still failing → tell Hans, never schedule a failed video.
 
 ## State
 `state/posts.json`: `{"posts": {"<id>": {"date","slot","status": "scripted|rendered|scheduled|published|failed","release","metricoolId","plannerUrl","attempts"}}}`
@@ -86,8 +107,8 @@ After it is scheduled, append one line with the same fields to `content/archive.
 ## Status log
 - 2026-11-08: pipeline live. Test publication trial-03 (Metricool 421032749, 21:30 Amsterdam). First stock of 21 Shorts scheduled 9–15 Nov
   (ids in state/posts.json). Daily scheduled task "Whispers dagelijkse productie" keeps the 7-day buffer.
-- Planned next (approved by Hans 2026-11-08): weekly long videos, 1920x1080 – A weekly compilation (Sun), B new long reflection/meditation (Wed),
-  C 30–60 min calm music video (Fri). Not built yet – until wots/long.py exists the daily run only makes Shorts.
+- Planned (approved by Hans 2026-11-08): weekly long videos, 1920x1080 – A weekly compilation (Sun), B new long reflection/meditation (Wed),
+  C 30–60 min calm music video (Fri). BUILT 2026-11-15 (wots/long.py, see "Weekly long videos"); first ones: 18 Nov reflection, 20 Nov music, 22 Nov compilation.
 - 2026-11-08: launch set of 5 extra Shorts (Hans approved) 21:55–23:35 Amsterdam, slot 'S' ids 2026-11-08-S1..S5.
 - 2026-11-08 21:30: first Short live (https://www.youtube.com/shorts/L6XgrruqbJw). Metricool reported 'published with warnings: Could not upload video thumbnail' → channel needs phone verification for custom thumbnails (asked Hans). Hans verified the phone at 21:46 – custom thumbnails should work from then on.
 - 2026-11-09: Instagram + TikTok (whispersofthesoulchannel) connected to brand 7965951 (Hans). All 23 still-scheduled posts (9 Nov 18:00

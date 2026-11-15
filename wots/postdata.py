@@ -54,7 +54,11 @@ def build_long(sid, at=None):
     tz = CFG['schedule']['timezone']
     date, time = at.split('T') if at else (s['date'], LONG_TIMES[s['kind']])
     meta_p = os.path.join(ROOT, 'out', sid, sid + '.meta.json')
-    chapters = s.get('chapters') or (json.load(open(meta_p))['chapters'] if os.path.exists(meta_p) else [])
+    if os.path.exists(meta_p):
+        chapters = json.load(open(meta_p))['chapters']
+    else:                      # fetch chapters from the release
+        import urllib.request
+        chapters = json.load(urllib.request.urlopen(CFG['hosting']['releaseUrl'].format(tag=sid, file=sid + '.meta.json')))['chapters']
     url = lambda f: CFG['hosting']['releaseUrl'].format(tag=sid, file=f)
     lead = {'music': 'Calm, original music to rest, sleep, pray or meditate, over a slowly moving night scene.',
             'reflection': 'A gentle guided reflection. Find a quiet place, breathe, and listen.',
