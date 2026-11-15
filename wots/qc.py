@@ -17,6 +17,9 @@ def qc(mp4):
     v = [s for s in pr['streams'] if s['codec_type'] == 'video'][0]; a = [s for s in pr['streams'] if s['codec_type'] == 'audio']
     dur = float(pr['format']['duration']); info.update(duration=round(dur, 2), width=v['width'], height=v['height'], fps=v['r_frame_rate'],
                                                        sizeMB=round(int(pr['format']['size']) / 1e6, 1))
+    meta_p0 = mp4.replace('.mp4', '.meta.json')
+    if os.path.exists(meta_p0) and json.load(open(meta_p0)).get('long'):
+        return qc_long(mp4, json.load(open(meta_p0)), v, a, dur, info)
     vc = CFG['video']
     if (v['width'], v['height']) != (vc['width'], vc['height']): errs.append('wrong resolution')
     if v['r_frame_rate'] != f"{vc['fps']}/1": errs.append('wrong frame rate')
@@ -43,6 +46,29 @@ def qc(mp4):
         if dur - m['voiceSeconds'] > 3.5: errs.append('tail after voice longer than 3.5 s')
     thumb = mp4.replace('.mp4', '_thumb.jpg')
     if not os.path.exists(thumb): errs.append('thumbnail missing')
+    res = {'file': os.path.basename(mp4), 'pass': not errs, 'errors': errs, **info}
+    json.dump(res, open(mp4.replace('.mp4', '.qc.json'), 'w'), indent=1)
+    return res
+
+
+def qc_long(mp4, m, v, a, dur, info):
+    errs = []
+    if (v['width'], v['height']) != (1920, 1080): errs.append('long video must be 1920x1080')
+    if not a: errs.append('no audio')
+    if abs(dur - m['seconds']) > 3: errs.append(f'duration {dur:.0f}s differs from planned {m["seconds"]}s')
+    lo = {'music': 20 * 60, 'reflection': 7 * 60, 'compilation': 6 * 60}.get(m.get('kind'), 6 * 60)
+    if dur < lo and not m['id'].startswith('test-'): errs.append(f'only {dur / 60:.1f} min')
+    out = subprocess.run(['ffmpeg', '-nostats', '-i', mp4, '-vn', '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    I = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', out)[-1]); P = float(re.findall(r'Peak:\s+(-?[\d.]+) dBFS', out)[-1])
+    info.update(lufs=I, peakDb=P)
+    if not -20 <= I <= -12: errs.append(f'loudness {I} LUFS')
+    if P > -0.9: errs.append(f'true peak {P} dBFS')
+    sil = subprocess.run(['ffmpeg', '-i', mp4, '-vn', '-af', 'silencedetect=n=-50dB:d=2', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    st = [float(x) for x in re.findall(r'silence_start: (-?[\d.]+)', sil)]
+    if st: errs.append(f'dead silence (>2 s) at {st[:3]}')
+    blk = subprocess.run(['ffmpeg', '-i', mp4, '-vf', 'fps=2,blackdetect=d=1:pix_th=0.02', '-an', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    if 'black_start' in blk: errs.append('black frames detected')
+    if not os.path.exists(mp4.replace('.mp4', '_thumb.jpg')): errs.append('thumbnail missing')
     res = {'file': os.path.basename(mp4), 'pass': not errs, 'errors': errs, **info}
     json.dump(res, open(mp4.replace('.mp4', '.qc.json'), 'w'), indent=1)
     return res

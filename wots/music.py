@@ -37,10 +37,12 @@ def _reverb(x, rng, secs=3.2, mix=0.45):
     return dry * (1 - mix) + wet * mix
 
 
-def compose(seconds, seed):
+def compose(seconds, seed, key=None):
     rng = np.random.default_rng(seed)
     n = int(seconds * SR); t = np.arange(n) / SR
     root = KEYS[rng.choice(list(KEYS))]
+    if key:                      # long videos: several pieces in one key (Shorts never pass key, so they are unchanged)
+        root = KEYS[key]
     prog = PROGS[rng.integers(len(PROGS))]
     chord_len = float(rng.choice([6.0, 7.0, 8.0, 9.0]))
     bright = rng.uniform(900, 1800)
