@@ -802,20 +802,32 @@
   "2026-11-22-A-inner-knowing": {
    "date": "2026-11-22",
    "slot": "A",
-   "status": "scripted",
-   "release": null,
-   "metricoolId": null,
-   "plannerUrl": null,
-   "attempts": 0
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-22-A-inner-knowing",
+   "metricoolId": 428696485,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7813031648202503857",
+   "attempts": 1,
+   "uuid": "-7813031648202503857",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   },
   "2026-11-22-B-soulmates": {
    "date": "2026-11-22",
    "slot": "B",
-   "status": "scripted",
-   "release": null,
-   "metricoolId": null,
-   "plannerUrl": null,
-   "attempts": 0
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-22-B-soulmates",
+   "metricoolId": 428696592,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=7511844657410755912",
+   "attempts": 1,
+   "uuid": "7511844657410755912",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   },
   "2026-11-22-C-source": {
    "date": "2026-11-22",
