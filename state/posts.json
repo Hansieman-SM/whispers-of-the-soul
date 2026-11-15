@@ -843,6 +843,42 @@
     "instagram",
     "tiktok"
    ]
+  },
+  "2026-11-18-reflection-letting-go": {
+   "date": "2026-11-18",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "2026-11-18-reflection-letting-go",
+   "metricoolId": 429039132,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3894203785977835534",
+   "attempts": 1,
+   "networks": [
+    "youtube"
+   ]
+  },
+  "2026-11-20-music-starlit-stillness": {
+   "date": "2026-11-20",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "2026-11-20-music-starlit-stillness",
+   "metricoolId": 429039471,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7847295016929049554",
+   "attempts": 1,
+   "networks": [
+    "youtube"
+   ]
+  },
+  "2026-11-22-compilation-week-47": {
+   "date": "2026-11-22",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "2026-11-22-compilation-week-47",
+   "metricoolId": 429039591,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3943376735611800510",
+   "attempts": 1,
+   "networks": [
+    "youtube"
+   ]
   }
  }
 }
