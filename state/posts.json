@@ -1011,6 +1011,36 @@
    "networks": [
     "youtube"
    ]
+  },
+  "2026-11-24-A-acceptance": {
+   "date": "2026-11-24",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-24-A-acceptance",
+   "metricoolId": 433937206,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3775971454987420766",
+   "attempts": 1,
+   "uuid": "3775971454987420766",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-25-A-letting-go": {
+   "date": "2026-11-25",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-25-A-letting-go",
+   "metricoolId": 433937398,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=6084229941272071902",
+   "attempts": 1,
+   "uuid": "6084229941272071902",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   }
  }
 }
