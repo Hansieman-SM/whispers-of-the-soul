@@ -983,6 +983,34 @@
    "networks": [
     "youtube"
    ]
+  },
+  "2026-11-25-B-animals": {
+   "date": "2026-11-25",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-25-B-animals",
+   "metricoolId": 433915033,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3891949532782350008",
+   "attempts": 1,
+   "uuid": "3891949532782350008",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-27-music-moonlit-sea": {
+   "date": "2026-11-27",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-music-moonlit-sea",
+   "metricoolId": 433915385,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4485694741004923538",
+   "attempts": 1,
+   "uuid": "-4485694741004923538",
+   "networks": [
+    "youtube"
+   ]
   }
  }
 }
