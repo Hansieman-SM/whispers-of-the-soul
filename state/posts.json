@@ -925,6 +925,64 @@
     "instagram",
     "tiktok"
    ]
+  },
+  "2026-11-24-B-twin-flames": {
+   "date": "2026-11-24",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-24-B-twin-flames",
+   "metricoolId": 433910768,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6754316116810381050",
+   "attempts": 1,
+   "uuid": "-6754316116810381050",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-24-C-parallel-worlds": {
+   "date": "2026-11-24",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-24-C-parallel-worlds",
+   "metricoolId": 433910937,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-8575195612225518250",
+   "attempts": 1,
+   "uuid": "-8575195612225518250",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-25-C-life-after-death": {
+   "date": "2026-11-25",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-25-C-life-after-death",
+   "metricoolId": 433911156,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-5707981163129388538",
+   "attempts": 1,
+   "uuid": "-5707981163129388538",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-25-reflection-rooted": {
+   "date": "2026-11-25",
+   "slot": "long",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-25-reflection-rooted",
+   "metricoolId": 433911348,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=2975293569232292942",
+   "attempts": 1,
+   "uuid": "2975293569232292942",
+   "networks": [
+    "youtube"
+   ]
   }
  }
 }
