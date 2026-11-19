@@ -496,7 +496,7 @@
   "2026-11-16-A-letting-go": {
    "date": "2026-11-16",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-A-letting-go",
    "metricoolId": 426606208,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6152135406763226966",
@@ -514,7 +514,7 @@
   "2026-11-16-B-animals": {
    "date": "2026-11-16",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-B-animals",
    "metricoolId": 426606224,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4372251369574612419",
@@ -532,7 +532,7 @@
   "2026-11-16-C-life-after-death": {
    "date": "2026-11-16",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-16-C-life-after-death",
    "metricoolId": 426606235,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3252989671221542096",
@@ -550,7 +550,7 @@
   "2026-11-17-A-inner-knowing": {
    "date": "2026-11-17",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-17-A-inner-knowing",
    "metricoolId": 426606255,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=6315274719255874563",
@@ -568,7 +568,7 @@
   "2026-11-17-B-soulmates": {
    "date": "2026-11-17",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-17-B-soulmates",
    "metricoolId": 426606587,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6035331301956432135",
@@ -581,12 +581,13 @@
    "previousMetricoolIds": [
     422851973
    ],
-   "rerendered": "2026-11-13 subscribe outro"
+   "rerendered": "2026-11-13 subscribe outro",
+   "note": "YouTube published with thumbnail warning (OjDoI0U3Se0) - counts as published"
   },
   "2026-11-17-C-dreams": {
    "date": "2026-11-17",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-17-C-dreams",
    "metricoolId": 426606598,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6983901539240621884",
@@ -604,7 +605,7 @@
   "2026-11-18-A-soul-purpose": {
    "date": "2026-11-18",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-18-A-soul-purpose",
    "metricoolId": 426606606,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=7551183040264555040",
@@ -622,7 +623,7 @@
   "2026-11-18-B-nature": {
    "date": "2026-11-18",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-18-B-nature",
    "metricoolId": 426606624,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4355880457616209326",
@@ -640,7 +641,7 @@
   "2026-11-18-C-angels": {
    "date": "2026-11-18",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-18-C-angels",
    "metricoolId": 426606992,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4490175909418479905",
@@ -847,7 +848,7 @@
   "2026-11-18-reflection-letting-go": {
    "date": "2026-11-18",
    "slot": "long",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-18-reflection-letting-go",
    "metricoolId": 429039132,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3894203785977835534",
@@ -878,6 +879,51 @@
    "attempts": 1,
    "networks": [
     "youtube"
+   ]
+  },
+  "2026-11-23-A-soul-purpose": {
+   "date": "2026-11-23",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-23-A-soul-purpose",
+   "metricoolId": 433894767,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5494563926916547687",
+   "attempts": 1,
+   "uuid": "5494563926916547687",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-23-B-nature": {
+   "date": "2026-11-23",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-23-B-nature",
+   "metricoolId": 433895089,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1982038285974848618",
+   "attempts": 1,
+   "uuid": "1982038285974848618",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-23-C-spirit-world": {
+   "date": "2026-11-23",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-23-C-spirit-world",
+   "metricoolId": 433895251,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2241807044054071176",
+   "attempts": 1,
+   "uuid": "-2241807044054071176",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
    ]
   }
  }
