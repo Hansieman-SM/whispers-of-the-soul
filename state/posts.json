@@ -1041,6 +1041,90 @@
     "instagram",
     "tiktok"
    ]
+  },
+  "2026-11-26-A-inner-knowing": {
+   "date": "2026-11-26",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-26-A-inner-knowing",
+   "metricoolId": 435250848,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=908534708451492927",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-26-B-soulmates": {
+   "date": "2026-11-26",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-26-B-soulmates",
+   "metricoolId": 435251059,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3691048870715607240",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-26-C-dreams": {
+   "date": "2026-11-26",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-26-C-dreams",
+   "metricoolId": 435251224,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6451647785930962501",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-27-A-soul-purpose": {
+   "date": "2026-11-27",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-A-soul-purpose",
+   "metricoolId": 435251349,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-8545240827325690444",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-27-B-nature": {
+   "date": "2026-11-27",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-B-nature",
+   "metricoolId": 435251527,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=333691202845427880",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-27-C-angels": {
+   "date": "2026-11-27",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-C-angels",
+   "metricoolId": 435251709,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=77273562139937600",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   }
  }
 }
