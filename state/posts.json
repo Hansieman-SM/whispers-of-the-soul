@@ -659,7 +659,7 @@
   "2026-11-19-A-acceptance": {
    "date": "2026-11-19",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-A-acceptance",
    "metricoolId": 426607015,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2878694060935001089",
@@ -677,7 +677,7 @@
   "2026-11-19-B-twin-flames": {
    "date": "2026-11-19",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-B-twin-flames",
    "metricoolId": 426607062,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1027992685599212722",
@@ -695,7 +695,7 @@
   "2026-11-19-C-spirit-guides": {
    "date": "2026-11-19",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-19-C-spirit-guides",
    "metricoolId": 426607082,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-5955319663520300213",
