@@ -713,7 +713,7 @@
   "2026-11-20-A-letting-go": {
    "date": "2026-11-20",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "attempts": 0,
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-20-A-letting-go",
    "metricoolId": 427822306,
@@ -728,7 +728,7 @@
   "2026-11-20-B-animals": {
    "date": "2026-11-20",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "attempts": 0,
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-20-B-animals",
    "metricoolId": 427822319,
@@ -743,7 +743,7 @@
   "2026-11-20-C-past-lives": {
    "date": "2026-11-20",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "attempts": 0,
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-20-C-past-lives",
    "metricoolId": 427822325,
@@ -860,7 +860,7 @@
   "2026-11-20-music-starlit-stillness": {
    "date": "2026-11-20",
    "slot": "long",
-   "status": "scheduled",
+   "status": "published",
    "release": "2026-11-20-music-starlit-stillness",
    "metricoolId": 429039471,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7847295016929049554",
@@ -1119,6 +1119,48 @@
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-C-angels",
    "metricoolId": 435251709,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=77273562139937600",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-28-A-acceptance": {
+   "date": "2026-11-28",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-28-A-acceptance",
+   "metricoolId": 436478480,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=134471361875234120",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-28-B-twin-flames": {
+   "date": "2026-11-28",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-28-B-twin-flames",
+   "metricoolId": 436478703,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2745553866612128623",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-28-C-spirit-guides": {
+   "date": "2026-11-28",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-28-C-spirit-guides",
+   "metricoolId": 436478808,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-5289634622707120958",
    "attempts": 0,
    "networks": [
     "youtube",
