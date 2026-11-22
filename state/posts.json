@@ -1167,6 +1167,51 @@
     "instagram",
     "tiktok"
    ]
+  },
+  "2026-11-29-A-letting-go": {
+   "date": "2026-11-29",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-29-A-letting-go",
+   "metricoolId": 437363387,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3583793686328292854",
+   "attempts": 0,
+   "uuid": "-3583793686328292854",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-29-B-animals": {
+   "date": "2026-11-29",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-29-B-animals",
+   "metricoolId": 437363543,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5727556791339665548",
+   "attempts": 0,
+   "uuid": "5727556791339665548",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-11-29-C-past-lives": {
+   "date": "2026-11-29",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-29-C-past-lives",
+   "metricoolId": 437363612,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6986482217022894773",
+   "attempts": 0,
+   "uuid": "-6986482217022894773",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   }
  }
 }
