@@ -169,7 +169,7 @@ def render_compilation(s, outdir, seed):
     lst = os.path.join(outdir, 'list.txt')
     open(lst, 'w').write(''.join(f"file '{os.path.abspath(p)}'\n" for p in segs))
     mp4 = os.path.join(outdir, s['id'] + '.mp4')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11',
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-2:LRA=11,alimiter=limit=0.79:attack=1:release=50:level=false',
                     '-ar', '48000', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', mp4], check=True)
     return mp4, tf, t, chapters, ids
 
