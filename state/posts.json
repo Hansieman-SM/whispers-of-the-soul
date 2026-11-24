@@ -884,7 +884,7 @@
   "2026-11-23-A-soul-purpose": {
    "date": "2026-11-23",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-23-A-soul-purpose",
    "metricoolId": 433894767,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5494563926916547687",
@@ -894,12 +894,22 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   },
+   "publicUrls": {
+    "youtube": "https://www.youtube.com/shorts/PhoV5in5W7A",
+    "instagram": "https://www.instagram.com/reel/DgFR3lXkQr_/",
+    "tiktok": "https://www.tiktok.com/@whispersofthesoulchannel/video/7711328073492303126"
+   }
   },
   "2026-11-23-B-nature": {
    "date": "2026-11-23",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-23-B-nature",
    "metricoolId": 433895089,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1982038285974848618",
@@ -909,12 +919,22 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   },
+   "publicUrls": {
+    "youtube": "https://www.youtube.com/shorts/B10aDKU4vDQ",
+    "instagram": "https://www.instagram.com/reel/DgF4ovmCUcU/",
+    "tiktok": "https://www.tiktok.com/@whispersofthesoulchannel/video/7711415475795791126"
+   }
   },
   "2026-11-23-C-spirit-world": {
    "date": "2026-11-23",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-23-C-spirit-world",
    "metricoolId": 433895251,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2241807044054071176",
@@ -924,7 +944,17 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   },
+   "publicUrls": {
+    "youtube": "https://www.youtube.com/shorts/6wDxnMyZ000",
+    "instagram": "https://www.instagram.com/reel/DgGg-q9gpus/",
+    "tiktok": "https://www.tiktok.com/@whispersofthesoulchannel/video/7711506367575624982"
+   }
   },
   "2026-11-24-B-twin-flames": {
    "date": "2026-11-24",
@@ -1262,6 +1292,36 @@
    "metricoolId": 438436044,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=2645055348601538041",
    "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-12-01-A-soul-purpose": {
+   "date": "2026-12-01",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-01-A-soul-purpose",
+   "metricoolId": 439947415,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-3977067209201663013",
+   "attempts": 1,
+   "uuid": "-3977067209201663013",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
+  },
+  "2026-12-01-C-spirit-world": {
+   "date": "2026-12-01",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-01-C-spirit-world",
+   "metricoolId": 439947868,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=1458170879440473451",
+   "attempts": 1,
+   "uuid": "1458170879440473451",
    "networks": [
     "youtube",
     "instagram",
