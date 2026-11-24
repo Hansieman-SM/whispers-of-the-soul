@@ -1327,6 +1327,21 @@
     "instagram",
     "tiktok"
    ]
+  },
+  "2026-12-01-B-nature": {
+   "date": "2026-12-01",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-01-B-nature",
+   "metricoolId": 439950938,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=4951764783556478297",
+   "attempts": 1,
+   "uuid": "4951764783556478297",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   }
  }
 }
