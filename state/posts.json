@@ -1396,8 +1396,15 @@
   "2026-12-02-reflection-gentle-dreams": {
    "date": "2026-12-02",
    "slot": "long",
-   "status": "scripted",
-   "attempts": 0
+   "status": "scheduled",
+   "attempts": 1,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-02-reflection-gentle-dreams",
+   "metricoolId": 441402678,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=2006548894842310512",
+   "uuid": "2006548894842310512",
+   "networks": [
+    "youtube"
+   ]
   }
  }
 }
