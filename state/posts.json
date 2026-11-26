@@ -1405,6 +1405,38 @@
    "networks": [
     "youtube"
    ]
+  },
+  "2026-12-03-A-letting-go": {
+   "date": "2026-12-03",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-03-A-letting-go",
+   "metricoolId": 442796856,
+   "uuid": "-2342596469084108373",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2342596469084108373",
+   "publishAt": "2026-12-03T06:30:00-05:00",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ],
+   "attempts": 1
+  },
+  "2026-12-03-B-animals": {
+   "date": "2026-12-03",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-03-B-animals",
+   "metricoolId": 442797196,
+   "uuid": "-222115809928655492",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-222115809928655492",
+   "publishAt": "2026-12-03T12:00:00-05:00",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ],
+   "attempts": 1
   }
  }
 }
