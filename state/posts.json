@@ -1437,6 +1437,22 @@
     "tiktok"
    ],
    "attempts": 1
+  },
+  "2026-12-03-C-life-after-death": {
+   "date": "2026-12-03",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-03-C-life-after-death",
+   "metricoolId": 442801059,
+   "uuid": "-2172310547729724258",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-2172310547729724258",
+   "publishAt": "2026-12-03T18:00:00-05:00",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ],
+   "attempts": 1
   }
  }
 }
