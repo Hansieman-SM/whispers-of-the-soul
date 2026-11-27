@@ -1486,7 +1486,7 @@
     "instagram",
     "tiktok"
    ],
-   "publishAt": "2026-12-04T06:30:00 America/New_York"
+   "publishAt": "2026-12-04T06:30:00-05:00"
   },
   "2026-12-04-B-soulmates": {
    "date": "2026-12-04",
@@ -1502,7 +1502,7 @@
     "instagram",
     "tiktok"
    ],
-   "publishAt": "2026-12-04T12:00:00 America/New_York"
+   "publishAt": "2026-12-04T12:00:00-05:00"
   },
   "2026-12-04-C-dreams": {
    "date": "2026-12-04",
@@ -1518,7 +1518,22 @@
     "instagram",
     "tiktok"
    ],
-   "publishAt": "2026-12-04T18:00:00 America/New_York"
+   "publishAt": "2026-12-04T18:00:00-05:00"
+  },
+  "2026-12-04-music-forest-hush": {
+   "date": "2026-12-04",
+   "slot": "long",
+   "kind": "music",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-04-music-forest-hush",
+   "metricoolId": 444062622,
+   "uuid": "-7066857094448004305",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-7066857094448004305",
+   "publishAt": "2026-12-04T21:00:00-05:00",
+   "networks": [
+    "youtube"
+   ],
+   "attempts": 0
   }
  }
 }
