@@ -1080,7 +1080,7 @@
   "2026-11-26-A-inner-knowing": {
    "date": "2026-11-26",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-26-A-inner-knowing",
    "metricoolId": 435250848,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=908534708451492927",
@@ -1089,12 +1089,18 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "publicUrl": "https://www.youtube.com/shorts/Qow7Eib6hU8",
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   }
   },
   "2026-11-26-B-soulmates": {
    "date": "2026-11-26",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-26-B-soulmates",
    "metricoolId": 435251059,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=3691048870715607240",
@@ -1103,12 +1109,18 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "publicUrl": "https://www.youtube.com/shorts/M3TBWA272nA",
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   }
   },
   "2026-11-26-C-dreams": {
    "date": "2026-11-26",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-26-C-dreams",
    "metricoolId": 435251224,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6451647785930962501",
@@ -1117,7 +1129,13 @@
     "youtube",
     "instagram",
     "tiktok"
-   ]
+   ],
+   "publicUrl": "https://www.youtube.com/shorts/MTPN8EMG01M",
+   "networkStatus": {
+    "youtube": "PUBLISHED",
+    "instagram": "PUBLISHED",
+    "tiktok": "PUBLISHED"
+   }
   },
   "2026-11-27-A-soul-purpose": {
    "date": "2026-11-27",
@@ -1453,6 +1471,54 @@
     "tiktok"
    ],
    "attempts": 1
+  },
+  "2026-12-04-A-inner-knowing": {
+   "date": "2026-12-04",
+   "slot": "A",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-04-A-inner-knowing",
+   "metricoolId": 444058681,
+   "uuid": "4610847284332220173",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=4610847284332220173",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ],
+   "publishAt": "2026-12-04T06:30:00 America/New_York"
+  },
+  "2026-12-04-B-soulmates": {
+   "date": "2026-12-04",
+   "slot": "B",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-04-B-soulmates",
+   "metricoolId": 444058701,
+   "uuid": "-6817722526386995156",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6817722526386995156",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ],
+   "publishAt": "2026-12-04T12:00:00 America/New_York"
+  },
+  "2026-12-04-C-dreams": {
+   "date": "2026-12-04",
+   "slot": "C",
+   "status": "scheduled",
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-04-C-dreams",
+   "metricoolId": 444058725,
+   "uuid": "5817009704183939531",
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=5817009704183939531",
+   "attempts": 0,
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ],
+   "publishAt": "2026-12-04T18:00:00 America/New_York"
   }
  }
 }
