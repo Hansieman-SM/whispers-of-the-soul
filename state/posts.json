@@ -1538,20 +1538,44 @@
   "2026-12-05-A-soul-purpose": {
    "date": "2026-12-05",
    "slot": "A",
-   "status": "scripted",
-   "attempts": 0
+   "status": "scheduled",
+   "attempts": 0,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-05-A-soul-purpose",
+   "metricoolId": 445240994,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4046734950600585515",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   },
   "2026-12-05-B-nature": {
    "date": "2026-12-05",
    "slot": "B",
-   "status": "scripted",
-   "attempts": 0
+   "status": "scheduled",
+   "attempts": 0,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-05-B-nature",
+   "metricoolId": 445241092,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-6611717089495789897",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   },
   "2026-12-05-C-angels": {
    "date": "2026-12-05",
    "slot": "C",
-   "status": "scripted",
-   "attempts": 0
+   "status": "scheduled",
+   "attempts": 0,
+   "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-12-05-C-angels",
+   "metricoolId": 445241157,
+   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=6004432371476679317",
+   "networks": [
+    "youtube",
+    "instagram",
+    "tiktok"
+   ]
   }
  }
 }
