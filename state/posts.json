@@ -1037,7 +1037,7 @@
   "2026-11-27-music-moonlit-sea": {
    "date": "2026-11-27",
    "slot": "long",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-music-moonlit-sea",
    "metricoolId": 433915385,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-4485694741004923538",
@@ -1140,7 +1140,7 @@
   "2026-11-27-A-soul-purpose": {
    "date": "2026-11-27",
    "slot": "A",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-A-soul-purpose",
    "metricoolId": 435251349,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=-8545240827325690444",
@@ -1154,7 +1154,7 @@
   "2026-11-27-B-nature": {
    "date": "2026-11-27",
    "slot": "B",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-B-nature",
    "metricoolId": 435251527,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=333691202845427880",
@@ -1168,7 +1168,7 @@
   "2026-11-27-C-angels": {
    "date": "2026-11-27",
    "slot": "C",
-   "status": "scheduled",
+   "status": "published",
    "release": "https://github.com/Hansieman-SM/whispers-of-the-soul/releases/tag/2026-11-27-C-angels",
    "metricoolId": 435251709,
    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7965951&openWithPostUuid=77273562139937600",
@@ -1533,6 +1533,24 @@
    "networks": [
     "youtube"
    ],
+   "attempts": 0
+  },
+  "2026-12-05-A-soul-purpose": {
+   "date": "2026-12-05",
+   "slot": "A",
+   "status": "scripted",
+   "attempts": 0
+  },
+  "2026-12-05-B-nature": {
+   "date": "2026-12-05",
+   "slot": "B",
+   "status": "scripted",
+   "attempts": 0
+  },
+  "2026-12-05-C-angels": {
+   "date": "2026-12-05",
+   "slot": "C",
+   "status": "scripted",
    "attempts": 0
   }
  }
